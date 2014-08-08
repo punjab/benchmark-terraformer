@@ -5,11 +5,15 @@ module Benchmark
     LON = -122.6764
     LAT = 45.5165
 
+    # setting the Terraformer ConvexHull implementation
+    # is kind of a pain. this does it for you
     def self.convex_hull obj, impl
       ::Terraformer::ConvexHull.impl = impl
       obj.convex_hull
     end
 
+    # generates a polygon representing waldo canyon with approximately
+    # size number of points representing the polygon
     def self.generate_waldo size
       # load up waldo
       wc = ::Terraformer.parse 'examples/waldocanyon.geojson'

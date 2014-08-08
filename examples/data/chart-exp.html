@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://www.google.com/jsapi"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://chartkick.com/chartkick.js"></script>
+  </head>
+  <body>
+
+  
+    <h1>Growth Chart</h1>
+
+    <div id="chart-1" style="height: 500px; text-align: center; color: #999; line-height: 500px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;">Loading...</div><script type="text/javascript">
+  new Chartkick.LineChart("chart-1", [{"name":"#rand-jarvis","data":{"1":98.45142916738844,"10":473.61098496367504,"100":7905.647764262437,"1000":82427.964572132}},{"name":"#rand-monotone","data":{"1":33.064414873436654,"10":193.79796987225322,"100":2682.911267920913,"1000":30573.39491727988}},{"name":"#circ-jarvis","data":{"1":101.10006190544398,"10":695.6019123365699,"100":48837.98432496216,"1000":4903352.085527043}},{"name":"#circ-monotone","data":{"1":38.31401679875625,"10":179.40207261715832,"100":3057.4071920947326,"1000":34809.80513373189}}], {"discrete":true,"width":"800px","min":26,"max":5884023,"library":{"colors":["#f0662d","#8062a6","#7bc545","#0883b2","#ffaa00"],"xAxis":{"type":"logarithmic","title":{"text":"Size"}},"yAxis":{"type":"logarithmic","title":{"text":"Seconds per 500000 Iterations"}}}});
+</script>
+
+  
+    <h1>#rand-jarvis</h1>
+
+    <div id="chart-2" style="height: 500px; text-align: center; color: #999; line-height: 500px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;">Loading...</div><script type="text/javascript">
+  new Chartkick.LineChart("chart-2", [{"name":"#rand-jarvis","data":{"1":98.45142916738844,"10":473.61098496367504,"100":7905.647764262437,"1000":82427.964572132}},{"name":"log n","data":{"1":0.0,"10":473.61098496367504,"100":947.2219699273501,"1000":1420.832954891025}},{"name":"n","data":{"1":47.361098496367504,"10":473.61098496367504,"100":4736.10984963675,"1000":47361.0984963675}},{"name":"n log n","data":{"1":0.0,"10":473.61098496367504,"100":9472.2196992735,"1000":142083.29548910251}},{"name":"n_sq","data":{"1":4.73610984963675,"10":473.61098496367504,"100":47361.0984963675,"1000":4736109.84963675}}], {"discrete":true,"width":"800px","min":78,"max":98914,"library":{"colors":["#f0662d","#8062a6","#7bc545","#0883b2","#ffaa00"],"xAxis":{"type":"logarithmic","title":{"text":"Size"}},"yAxis":{"type":"logarithmic","title":{"text":"Seconds per 500000 Iterations"}}}});
+</script>
+
+  
+    <h1>#rand-monotone</h1>
+
+    <div id="chart-3" style="height: 500px; text-align: center; color: #999; line-height: 500px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;">Loading...</div><script type="text/javascript">
+  new Chartkick.LineChart("chart-3", [{"name":"#rand-monotone","data":{"1":33.064414873436654,"10":193.79796987225322,"100":2682.911267920913,"1000":30573.39491727988}},{"name":"log n","data":{"1":0.0,"10":193.79796987225322,"100":387.59593974450644,"1000":581.3939096167596}},{"name":"n","data":{"1":19.379796987225323,"10":193.79796987225322,"100":1937.9796987225322,"1000":19379.796987225323}},{"name":"n log n","data":{"1":0.0,"10":193.79796987225322,"100":3875.9593974450645,"1000":58139.39096167597}},{"name":"n_sq","data":{"1":1.9379796987225322,"10":193.79796987225322,"100":19379.796987225323,"1000":1937979.6987225323}}], {"discrete":true,"width":"800px","min":26,"max":36689,"library":{"colors":["#f0662d","#8062a6","#7bc545","#0883b2","#ffaa00"],"xAxis":{"type":"logarithmic","title":{"text":"Size"}},"yAxis":{"type":"logarithmic","title":{"text":"Seconds per 500000 Iterations"}}}});
+</script>
+
+  
+    <h1>#circ-jarvis</h1>
+
+    <div id="chart-4" style="height: 500px; text-align: center; color: #999; line-height: 500px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;">Loading...</div><script type="text/javascript">
+  new Chartkick.LineChart("chart-4", [{"name":"#circ-jarvis","data":{"1":101.10006190544398,"10":695.6019123365699,"100":48837.98432496216,"1000":4903352.085527043}},{"name":"log n","data":{"1":0.0,"10":695.6019123365699,"100":1391.2038246731397,"1000":2086.8057370097094}},{"name":"n","data":{"1":69.56019123365698,"10":695.6019123365697,"100":6956.019123365698,"1000":69560.19123365698}},{"name":"n log n","data":{"1":0.0,"10":695.6019123365697,"100":13912.038246731396,"1000":208680.57370097094}},{"name":"n_sq","data":{"1":6.9560191233656985,"10":695.6019123365699,"100":69560.19123365698,"1000":6956019.123365698}}], {"discrete":true,"width":"800px","min":80,"max":5884023,"library":{"colors":["#f0662d","#8062a6","#7bc545","#0883b2","#ffaa00"],"xAxis":{"type":"logarithmic","title":{"text":"Size"}},"yAxis":{"type":"logarithmic","title":{"text":"Seconds per 500000 Iterations"}}}});
+</script>
+
+  
+    <h1>#circ-monotone</h1>
+
+    <div id="chart-5" style="height: 500px; text-align: center; color: #999; line-height: 500px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;">Loading...</div><script type="text/javascript">
+  new Chartkick.LineChart("chart-5", [{"name":"#circ-monotone","data":{"1":38.31401679875625,"10":179.40207261715832,"100":3057.4071920947326,"1000":34809.80513373189}},{"name":"log n","data":{"1":0.0,"10":179.40207261715832,"100":358.80414523431665,"1000":538.206217851475}},{"name":"n","data":{"1":17.940207261715834,"10":179.40207261715835,"100":1794.0207261715834,"1000":17940.207261715834}},{"name":"n log n","data":{"1":0.0,"10":179.40207261715835,"100":3588.041452343167,"1000":53820.6217851475}},{"name":"n_sq","data":{"1":1.7940207261715833,"10":179.40207261715832,"100":17940.207261715834,"1000":1794020.7261715832}}], {"discrete":true,"width":"800px","min":30,"max":41772,"library":{"colors":["#f0662d","#8062a6","#7bc545","#0883b2","#ffaa00"],"xAxis":{"type":"logarithmic","title":{"text":"Size"}},"yAxis":{"type":"logarithmic","title":{"text":"Seconds per 500000 Iterations"}}}});
+</script>
+
+  
+  </body>
+</html>
+

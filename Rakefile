@@ -34,8 +34,8 @@ task :benchmark do
     x.linear 200
     x.increments = 4 # 200..800
 
-    # can switch to logarithmic
-    #x.logarithmic 10
+    # can switch to exponential
+    #x.exponential 10
     #x.increments = 4 # 1..1000
 
     @generator_name = :random_walk

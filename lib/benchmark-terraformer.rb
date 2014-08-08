@@ -43,6 +43,8 @@ module Benchmark
     # random walk
     def self.random_walk size
 
+      size = 2 if size < 2
+
       lat = LAT
       lon = LON
 

@@ -7,10 +7,11 @@ Provides an example of how to use the [benchmark-bigo gem](http://github.com/dav
 
 ```
 bundle install
-rake benchmark
+rake benchmark     # generates benchmark chart for objects increasing linearly
+rake benchmark_exp # generates benchmark chart for objects increasing exponentially
 ```
 
-Then view the raw data in data/results.json, and view the rendered charts in data/chart.html.
+Then view the raw JSON data and rendered charts in `data/`.
 
 ## How does it work?
 

@@ -8,11 +8,11 @@ Provides an example of how to use the [benchmark-bigo gem](http://github.com/dav
 ```
 bundle install
 
-rake benchmark_random_walk  # benchmarks running the convex hull operation on a random walk line string
-rake benchmark_circle       # benchmarks running the convex hull operation on a circle
+rake benchmark_random_walk  # benchmarks random walk line string
+rake benchmark_circle       # benchmarks circle
 
-rake benchmark              # generates benchmark chart for both objects, increasing linearly
-rake benchmark_exp          # generates benchmark chart for both objects, increasing exponentially
+rake benchmark              # benchmarks both objects, increasing linearly
+rake benchmark_exp          # benchmarks both objects, increasing exponentially
 ```
 
 Then view the raw JSON data and rendered charts in `data/`.

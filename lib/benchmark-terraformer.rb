@@ -47,10 +47,16 @@ module Terraformer::Benchmark
     diameter = [100, size].max
 
     # generate circle feature
-    Terraformer::Circle.new([-122.6764, 45.5165], diameter, size).to_feature
+    c = Terraformer::Circle.new([LON, LAT], diameter, size)
+
+    # convert to feature
+    c.to_feature
   end
 end
 
 
+# needed for geojson_io method
+# useful for quickly visualizing
+# a feature
 require 'uri'
 require 'launchy'

@@ -11,7 +11,7 @@ Benchmark.bigo do |x|
   x.report("#index") {|array, size|
     array.index rand(size)
   }
-  x.report("#index-miss") { |array, size|
+  x.report("#index-miss") {|array, size|
     array.index (size + rand(size))
   }
 

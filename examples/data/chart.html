@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://www.google.com/jsapi"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://chartkick.com/chartkick.js"></script>
+  </head>
+  <body>
+
+  
+    <h1>Growth Chart</h1>
+
+    <div id="chart-1" style="height: 600px; text-align: center; color: #999; line-height: 500px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;">Loading...</div><script type="text/javascript">
+  new Chartkick.LineChart("chart-1", [{"name":"#rand-jarvis","data":{"200":10.458267562598747,"400":35.86996518185625,"600":46.801179948539676,"800":65.95204445216987,"1000":92.25904805124087}},{"name":"#rand-monotone","data":{"200":5.165668143803346,"400":10.855841533104638,"600":16.70931181721415,"800":23.284462160821626,"1000":29.216590258864215}},{"name":"#circ-jarvis","data":{"200":182.19129290110828,"400":808.3720348341226,"600":1701.9936431248136,"800":3074.62923460966,"1000":4787.374494268205}},{"name":"#circ-monotone","data":{"200":5.31074868401629,"400":11.340669908849152,"600":16.835758607156006,"800":23.32398761902465,"1000":30.39976244300783}}], {"discrete":true,"width":"800px","min":4,"max":5745,"library":{"colors":["#f0662d","#8062a6","#7bc545","#0883b2","#ffaa00"],"xAxis":{"type":"linear","title":{"text":"Size"}},"yAxis":{"type":"linear","title":{"text":"Seconds per 500 Iterations"}}}});
+</script>
+
+  
+    <h1>#rand-jarvis</h1>
+
+    <div id="chart-2" style="height: 600px; text-align: center; color: #999; line-height: 500px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;">Loading...</div><script type="text/javascript">
+  new Chartkick.LineChart("chart-2", [{"name":"#rand-jarvis","data":{"200":10.458267562598747,"400":35.86996518185625,"600":46.801179948539676,"800":65.95204445216987,"1000":92.25904805124087}},{"name":"log n","data":{"200":10.458267562598747,"400":11.826460174148517,"600":12.626801545668878,"800":13.194652785698285,"1000":13.635112426573468}},{"name":"n","data":{"200":10.458267562598747,"400":20.916535125197495,"600":31.37480268779624,"800":41.83307025039499,"1000":52.29133781299374}},{"name":"n log n","data":{"200":10.458267562598747,"400":23.652920348297034,"600":37.880404637006635,"800":52.77861114279314,"1000":68.17556213286733}},{"name":"n_sq","data":{"200":10.458267562598747,"400":41.83307025039499,"600":94.12440806338873,"800":167.33228100157996,"1000":261.45668906496866}}], {"discrete":true,"width":"800px","min":8,"max":111,"library":{"colors":["#f0662d","#8062a6","#7bc545","#0883b2","#ffaa00"],"xAxis":{"type":"linear","title":{"text":"Size"}},"yAxis":{"type":"linear","title":{"text":"Seconds per 500 Iterations"}}}});
+</script>
+
+  
+    <h1>#rand-monotone</h1>
+
+    <div id="chart-3" style="height: 600px; text-align: center; color: #999; line-height: 500px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;">Loading...</div><script type="text/javascript">
+  new Chartkick.LineChart("chart-3", [{"name":"#rand-monotone","data":{"200":5.165668143803346,"400":10.855841533104638,"600":16.70931181721415,"800":23.284462160821626,"1000":29.216590258864215}},{"name":"log n","data":{"200":5.165668143803346,"400":5.841461619708023,"600":6.236775461344266,"800":6.517255095612701,"1000":6.734812001848002}},{"name":"n","data":{"200":5.165668143803346,"400":10.331336287606693,"600":15.497004431410037,"800":20.662672575213385,"1000":25.82834071901673}},{"name":"n log n","data":{"200":5.165668143803346,"400":11.682923239416047,"600":18.710326384032797,"800":26.069020382450805,"1000":33.67406000924001}},{"name":"n_sq","data":{"200":5.165668143803346,"400":20.662672575213385,"600":46.491013294230115,"800":82.65069030085354,"1000":129.14170359508367}}], {"discrete":true,"width":"800px","min":4,"max":36,"library":{"colors":["#f0662d","#8062a6","#7bc545","#0883b2","#ffaa00"],"xAxis":{"type":"linear","title":{"text":"Size"}},"yAxis":{"type":"linear","title":{"text":"Seconds per 500 Iterations"}}}});
+</script>
+
+  
+    <h1>#circ-jarvis</h1>
+
+    <div id="chart-4" style="height: 600px; text-align: center; color: #999; line-height: 500px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;">Loading...</div><script type="text/javascript">
+  new Chartkick.LineChart("chart-4", [{"name":"#circ-jarvis","data":{"200":182.19129290110828,"400":808.3720348341226,"600":1701.9936431248136,"800":3074.62923460966,"1000":4787.374494268205}},{"name":"log n","data":{"200":182.19129290110828,"400":206.0262903654546,"600":219.968870086881,"800":229.8612878298009,"1000":237.53444315514298}},{"name":"n","data":{"200":182.19129290110828,"400":364.38258580221657,"600":546.5738787033249,"800":728.7651716044331,"1000":910.9564645055415}},{"name":"n log n","data":{"200":182.19129290110828,"400":412.0525807309092,"600":659.906610260643,"800":919.4451513192035,"1000":1187.672215775715}},{"name":"n_sq","data":{"200":182.19129290110828,"400":728.7651716044331,"600":1639.7216361099745,"800":2915.0606864177325,"1000":4554.782322527707}}], {"discrete":true,"width":"800px","min":145,"max":5745,"library":{"colors":["#f0662d","#8062a6","#7bc545","#0883b2","#ffaa00"],"xAxis":{"type":"linear","title":{"text":"Size"}},"yAxis":{"type":"linear","title":{"text":"Seconds per 500 Iterations"}}}});
+</script>
+
+  
+    <h1>#circ-monotone</h1>
+
+    <div id="chart-5" style="height: 600px; text-align: center; color: #999; line-height: 500px; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;">Loading...</div><script type="text/javascript">
+  new Chartkick.LineChart("chart-5", [{"name":"#circ-monotone","data":{"200":5.31074868401629,"400":11.340669908849152,"600":16.835758607156006,"800":23.32398761902465,"1000":30.39976244300783}},{"name":"log n","data":{"200":5.31074868401629,"400":6.0055221795093825,"600":6.411938620867799,"800":6.700295675002474,"1000":6.923962782784798}},{"name":"n","data":{"200":5.31074868401629,"400":10.62149736803258,"600":15.93224605204887,"800":21.24299473606516,"1000":26.55374342008145}},{"name":"n log n","data":{"200":5.31074868401629,"400":12.011044359018763,"600":19.235815862603395,"800":26.801182700009893,"1000":34.61981391392399}},{"name":"n_sq","data":{"200":5.31074868401629,"400":21.24299473606516,"600":47.79673815614661,"800":84.97197894426064,"1000":132.76871710040726}}], {"discrete":true,"width":"800px","min":4,"max":37,"library":{"colors":["#f0662d","#8062a6","#7bc545","#0883b2","#ffaa00"],"xAxis":{"type":"linear","title":{"text":"Size"}},"yAxis":{"type":"linear","title":{"text":"Seconds per 500 Iterations"}}}});
+</script>
+
+  
+  </body>
+</html>
+

@@ -47,8 +47,8 @@ task :benchmark_circle do
     x.linear 200
     x.increments = 5 # 200..1000
 
-    x.report("#rand-jarvis") {|f, _| Terraformer::Benchmark.convex_hull f, :jarvis_march }
-    x.report("#rand-monotone") {|f, _| Terraformer::Benchmark.convex_hull f, :monotone}
+    x.report("#circ-jarvis") {|f, _| Terraformer::Benchmark.convex_hull f, :jarvis_march }
+    x.report("#circ-monotone") {|f, _| Terraformer::Benchmark.convex_hull f, :monotone}
 
     x.data! 'data/results_circle.json'
     x.chart! 'data/chart_circle.html'

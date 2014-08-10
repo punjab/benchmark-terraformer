@@ -39,3 +39,27 @@ Then navigate to `http://localhost:5000/viewer.html`
 The viewer is built on top of [Leaflet](http://leafletjs.com/) and uses [Esri Leaflet](http://esri.github.io/esri-leaflet/) for the Esri Gray basemap and [Leaflet AJAX](https://github.com/calvinmetcalf/leaflet-ajax).
 
 The viewer currently can show either the `example/geojson/circle.geojson` file or the `example/geojson/random_walk.geojson` and the accompanying `example/geojson/random_walk_hull.geojson` file.
+
+## Benchmarking Array
+
+There are some example files comparing how to benchmark a few basic array operations using the built-in Benchmark utility as well as [Benchmark IPS](https://github.com/evanphx/benchmark-ips) and [Benchmark BigO](https://github.com/davy/benchmark-bigo).
+
+Benchmark Array
+
+```
+$ ruby examples/bm.rb
+```
+
+Benchmark Array using Benchmark IPS
+
+```
+$ ruby examples/ips.rb
+```
+
+Benchmark Array using Benchmark BigO
+
+```
+$ ruby examples/bigo.rb      # on linearly growing arrays
+$ ruby examples/bigo-exp.rb  # on exponentially growing arrays
+
+```
